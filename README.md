@@ -11,7 +11,7 @@ Set-ExecutionPolicy Unrestricted
 
 Pour remettre les règles d'exécution par défaut, il faut entrer la commande suivante :
 ```PowerShell
-Set-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy Restricted
 ```
 
 ## Mise en place
