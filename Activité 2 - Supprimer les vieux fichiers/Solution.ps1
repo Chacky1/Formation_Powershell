@@ -1,4 +1,9 @@
-﻿Param (
+﻿<#
+    .Description
+    Script qui supprime les fichiers qui n'ont pas été modifié depuis au moins 7 jours dans un répertoire donné
+#>
+
+Param (
     [String]$Path
 )
 
