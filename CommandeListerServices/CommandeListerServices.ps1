@@ -1,0 +1,1 @@
+﻿Get-Service | ForEach-Object { "$($_.Name) est dans l'état : $($_.Status)" }
