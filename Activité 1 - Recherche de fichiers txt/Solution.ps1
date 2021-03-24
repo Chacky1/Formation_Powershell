@@ -4,9 +4,9 @@
 #>
 
 Param (
-    [String]$Path
+    [String]$PathDossierTest
 )
 
 Function RechercheFichierTxt {
-    return Get-ChildItem -Path $Path -Filter *.txt
+    return Get-ChildItem -Path $PathDossierTest -Filter *.txt
 }

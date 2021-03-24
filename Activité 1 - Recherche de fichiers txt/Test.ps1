@@ -1,8 +1,8 @@
 ﻿Param (
-    [String]$Path
+    [String]$PathScript
 )
 
-. $Path -Path .\Tests
+. $PathScript -PathDossierTest .\Tests
 
 Describe 'RechercheFichierTxt' {
     Context 'Nombre' {

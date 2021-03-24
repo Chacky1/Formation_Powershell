@@ -21,7 +21,7 @@ Pour vérifier que votre script fonctionne, des tests unitaires vous sont propos
 
 Exemple avec l'activité 1 :
 ```PowerShell
-.\Test.ps1 -Path .\Solution.ps1
+.\Test.ps1 -PathScript .\Solution.ps1
 ```
 
 Pour vérifier que votre script passe également les tests, il faudra le placer dans le dossier de l'activité et changer *.\Solution.ps1* par le nom de votre fichier.

@@ -4,7 +4,9 @@
 #>
 
 Param (
-    [String]$Path
+    [String]$PathDossierTest
 )
 
-Get-ChildItem -Path $Path | Sort-Object LastWriteTime -Descending | Select-Object Fullname,LastWriteTime | Write-Output
+Function TrieFichiersParDate {
+    return Get-ChildItem -Path $PathDossierTest | Sort-Object LastWriteTime -Descending | Select-Object Name,LastWriteTime | Write-Output
+}

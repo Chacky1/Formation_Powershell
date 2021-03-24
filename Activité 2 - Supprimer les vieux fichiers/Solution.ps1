@@ -4,7 +4,9 @@
 #>
 
 Param (
-    [String]$Path
+    [String]$PathDossierTest
 )
 
-Get-ChildItem -Path $Path | Where-Object {$_.LastWriteTime -lt (Get-Date).AddDays(-7)} | Remove-Item
+Function PurgeDesVieuxFichiers {
+    return Get-ChildItem -Path $PathDossierTest | Where-Object {$_.LastWriteTime -lt (Get-Date).AddDays(-7)} | Remove-Item
+}
