@@ -17,9 +17,11 @@ Set-ExecutionPolicy Restricted
 ## Mise en place
 
 Chaque exercice pratique constitue un dossier de ce repo git.
-Pour vérifier que votre script fonctionne, utilisez le dossier *Tests*, en plaçant votre script à la place de la solution que ce repo propose.
+Pour vérifier que votre script fonctionne, des tests unitaires vous sont proposés.
 
-Exemple avec l'exercice *ChercheurDeFichierTxt* :
+Exemple avec l'activité 1 :
 ```PowerShell
-.\ChercheurDeFichierTxt.ps1 -Path .\Tests
+.\Test.ps1 -Path .\Solution.ps1
 ```
+
+Pour vérifier que votre script passe également les tests, il faudra le placer dans le dossier de l'activité et changer *.\Solution.ps1* par le nom de votre fichier.

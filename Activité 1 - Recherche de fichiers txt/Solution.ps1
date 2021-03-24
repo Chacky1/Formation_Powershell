@@ -7,4 +7,6 @@ Param (
     [String]$Path
 )
 
-Get-ChildItem -Path $Path -Filter *.txt
+Function RechercheFichierTxt {
+    return Get-ChildItem -Path $Path -Filter *.txt
+}
